@@ -1,0 +1,32 @@
+body{
+    background-image: url('../assets/img/bc4CDIjBQIGtVVTBBz-M2Ry9RVP0ltmbUOlzwYxyod8.webp');
+    background-size: cover;
+}
+
+.combate-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.pokimon-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.versus {
+    font-size: 100px;
+
+
+}
+
+.btn-detalles {
+    color: black;
+}
+
+@font-face {
+    font-family: 'Pokimon';
+    src: url('../assets/fuentes/Minecraft.ttf') format('truetype');
+}

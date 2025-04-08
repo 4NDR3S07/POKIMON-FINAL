@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenador y Pokemones</title>
+  <link rel="stylesheet" href="../css/Entrenador.css">
+</head>
+<body>
+
+  <div class="seccion">
+    <h2>Entrenador</h2>
+    <div class="opciones-entrenador">
+      <div onclick="seleccionarEntrenador(this)" class="entrenador-opcion">
+        <img class="imagen-entrenador" src="../assets/img/Entrenadora.png" alt="Entrenador Hombre">
+        <div class="descripcion">Entrenadora</div>
+      </div>
+      <div onclick="seleccionarEntrenador(this)" class="entrenador-opcion">
+        <img class="imagen-entrenador" src="../assets/img/Entrenador.png" alt="Entrenadora Mujer">
+        <div class="descripcion">Entrenador</div>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="seccion">
+    <h2>Pokimones</h2>
+    <div class="contenedor-pokemones">
+
+
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="../assets/img/Voltrip.png" alt="pitachun">
+        <div class="descripcion">Voltrip</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('pitachun')">Detalles</button>
+        <div id="pitachun" class="estadisticas">
+           Tipo: Eléctrico/Bicho<br> 💥 Ataque: 80<br> 🛡️ Defensa: 50<br> 💨 Velocidad: 110<br> ❤️ HP: 65
+        </div>
+      </div>
+
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="../assets/img/Flamdrake.png" alt="quemander">
+        <div class="descripcion">Flamdrake</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('quemander')">Detalles</button>
+        <div id="quemander" class="estadisticas">
+           Tipo: Fuego/Dragón<br> 💥 Ataque: 95<br> 🛡️ Defensa: 70<br> 💨 Velocidad: 85<br> ❤️ HP: 80
+        </div>
+      </div>
+
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="../assets/img/Terracoon.png" alt="bulbaloo">
+        <div class="descripcion">Terracoon</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('bulbaloo')">Detalles</button>
+        <div id="bulbaloo" class="estadisticas">
+           Tipo: Tierra/Normal<br> 💥 Ataque: 85<br> 🛡️ Defensa: 95<br> 💨 Velocidad: 55<br> ❤️ HP: 90
+        </div>
+      </div>
+
+  
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="../assets/img/Aquanix.png" alt="Escurrete">
+        <div class="descripcion">Aquanix</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('Escurrete')">Detalles</button>
+        <div id="Escurrete" class="estadisticas">
+           Tipo: Agua/Psíquico<br> 💥 Ataque: 75<br> 🛡️ Defensa: 65<br> 💨 Velocidad: 60<br> ❤️ HP: 100
+        </div>
+      </div>
+
+      <div class="pokemon-card" onclick="seleccionarPokemon(this)">
+        <img class="imagen" src="../assets/img/Spectowl.png" alt="Eevee">
+        <div class="descripcion">Spectowl</div>
+        <button class="btn-detalles" onclick="event.stopPropagation(); mostrarDetalles('eevee')">Detalles</button>
+        <div id="eevee" class="estadisticas">
+           Tipo: Fantasma/Volador<br> 💥 Ataque: 70<br> 🛡️ Defensa: 60<br> 💨 Velocidad: 90<br> ❤️ HP: 75
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <button type="button" class="btn btn-primary btn-lg" onclick="iniciarCombate()"> Combatir</button>
+
+ <script src="../js/Entrenador.js"></script>
+</body>
+</html>
